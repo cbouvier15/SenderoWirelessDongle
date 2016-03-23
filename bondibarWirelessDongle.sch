@@ -1337,7 +1337,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <parts>
 <part name="D" library="SparkFun-Connectors" deviceset="M15" device=""/>
 <part name="I" library="SparkFun-Connectors" deviceset="M15" device=""/>
-<part name="USB_CONN" library="SparkFun-Connectors" deviceset="USB" device="-A-H"/>
+<part name="DATA_OUT" library="SparkFun-Connectors" deviceset="USB" device="-A-H"/>
 </parts>
 <sheets>
 <sheet>
@@ -1346,7 +1346,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instances>
 <instance part="D" gate="G$1" x="160.02" y="99.06" rot="R180"/>
 <instance part="I" gate="G$1" x="78.74" y="99.06"/>
-<instance part="USB_CONN" gate="G$1" x="124.46" y="139.7" rot="R90"/>
+<instance part="DATA_OUT" gate="G$1" x="124.46" y="139.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1357,13 +1357,13 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="88.9" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="104.14" x2="93.98" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="132.08" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="USB_CONN" gate="G$1" pin="D+"/>
+<pinref part="DATA_OUT" gate="G$1" pin="D+"/>
 <wire x1="116.84" y1="132.08" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="USB_CONN" gate="G$1" pin="D-"/>
+<pinref part="DATA_OUT" gate="G$1" pin="D-"/>
 <wire x1="119.38" y1="137.16" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="129.54" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
@@ -1373,7 +1373,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="USB_CONN" gate="G$1" pin="VBUS"/>
+<pinref part="DATA_OUT" gate="G$1" pin="VBUS"/>
 <wire x1="121.92" y1="137.16" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="129.54" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
@@ -1383,7 +1383,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="USB_CONN" gate="G$1" pin="GND"/>
+<pinref part="DATA_OUT" gate="G$1" pin="GND"/>
 <wire x1="124.46" y1="137.16" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
 <label x="124.46" y="132.08" size="1.778" layer="95"/>
 </segment>
@@ -1391,6 +1391,21 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="D" gate="G$1" pin="14"/>
 <wire x1="144.78" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
 <label x="144.78" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I" gate="G$1" pin="7"/>
+<wire x1="88.9" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<label x="96.52" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I" gate="G$1" pin="14"/>
+<wire x1="88.9" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<label x="91.44" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D" gate="G$1" pin="10"/>
+<wire x1="149.86" y1="93.98" x2="144.78" y2="93.98" width="0.1524" layer="91"/>
+<label x="142.24" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
